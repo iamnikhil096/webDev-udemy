@@ -1,0 +1,7 @@
+h1 {
+	/* The below code basically specifies the font-family to use from google fonts, and if the network fails then by default use "sans-serif" (ie- specified after the comma) */
+	font-family: 'Raleway', sans-serif;
+}
+p {
+	font-family: 'Indie Flower', cursive;
+}

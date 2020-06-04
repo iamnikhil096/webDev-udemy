@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dropdown and Radio Buttons</title>
+</head>
+<body>
+	<!-- radio button allows to select and no deselect -->
+	<input type="radio">
+	<input type="radio">
+	<!-- checkbox allows to select/deselect any option. -->
+	<input type="checkbox">
+
+	<!-- since radio button cannot be deselected, so when we multiple radio button as options then we must group them together so that if we select any option other options automatically gets deselected. -->
+	<!-- to group the radio buttons together we need "name =" attribute, all the radio buttons with same "name" will be grouped together. -->
+
+
+	<form>
+		<!-- below 2 radio buttons have same name = petChoice so they both are grouped together. -->
+		<label for="dog">Dogs : </label>
+		<input type="radio" name="petChoice" id="dog">
+		<label for="cat">Cats : </label>
+		<input type="radio" name="petChoice" id="cat">
+		<!-- when we use button at the end of the form it acts as Submit button. -->
+		<button>Go!</button>
+	</form>
+
+
+
+	<!-- in the above form when we select any option and try submitting, we can notice that we are not able to identify which radio button we selected i.e what value we 		selected, now to do that we need an additional attribute with the radio buttons i.e. "value" attribute, this says what value needs to be passed if we select the 		respective radio button, this value is associated with the name of group of radio buttons. -->
+	<!-- example for above explanation is given below. -->
+	<form>
+		<!-- below 2 radio buttons have same (name = petChoice) so they both are grouped together. -->
+		<label for="dog">Dogs : </label>
+		<input type="radio" name="petChoice" id="dog" value="DOGS">
+		<label for="cat">Cats : </label>
+		<input type="radio" name="petChoice" id="cat" value="CATS">
+		<!-- when we use button at the end of the form it acts as Submit button. -->
+		<button>Go!</button>
+	</form>
+
+
+	<!-- Dropdown Example -->
+	<h1>Example 0 with no "name" or "value" attribute.</h1>
+	<form>
+		<select>
+			<option>Red</option>
+			<option>Blue</option>
+			<option>Green</option>
+		</select>
+		<button>submit option!</button>
+	</form>
+	<!-- again if we submt the above form with select option nothing happens(no value is assigned), for that again we need to use the "name" as the name attribute is assigned the value selected. -->
+	<!-- by default the value assigned to "name" attribute is the name of option selected (Red, Blue, Green), but we can assign any value we want by using "value" attribute, it is shown in the below example.  -->
+	<h1>Example 1 using only "name" attribute with select option.</h1>
+	<form>
+		<select name="color1">
+			<!-- here name = (Red, Blue, Green), i.e. name can be either of the three select option names. -->
+			<option>Red</option>
+			<option>Blue</option>
+			<option>Green</option>
+		</select>
+		<button>submit option!</button>
+	</form>
+	<h1>Example 2 using "name" and "value" attribute with select option.</h1>
+	<form>
+		<select name="color2">
+			<!-- here name = (Angry, COOL, Neutral) -->
+			<option value="Angry">Red</option>
+			<option value="COOL">Blue</option>
+			<option value="Neutral">Green</option>
+		</select>
+		<button>submit option!</button>
+	</form>
+	<!-- another interesting element is "TextArea" element - to give multiple line inputs, if we use it outside the form then value entered is not submitted, but if used 		inside the form value entered is submitted. -->
+	<form>
+		<h1>TextArea Example without using "name" attribute.</h1>
+		<textarea rows="10" cols="50"></textarea>
+		<input type="submit" >
+		
+	</form>
+		<!-- here also if we want to send the data in the request we will have to use the "name" attribute -->
+	<form>
+		<h1>TextArea Example using "name" attribute.</h1>
+		<textarea name="Feedback" rows="10" cols="50"></textarea>
+		<input type="submit" >
+	</form>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Exercise</title>
+</head>
+<body>
+	<h1>Register </h1>
+	<form>
+		<div>
+			<label for="first_name">First Name :</label>
+			<input type="text" name="firstName" id="first_name" placeholder="First Name" required>
+			<label for="last_name">Last Name :</label>
+			<input type="text" name="lastName" id="last_name" placeholder="Last Name" required>
+		</div>
+		<div>
+			<label for="male">Male</label>
+			<input type="radio" name="gender" id="male" value="male" required>
+			<label for="female">Female</label>
+			<input type="radio" name="gender" id="female" value="female" required>
+			<label for="other">Other</label>
+			<input type="radio" name="gender" id="other" value="other" required>
+		</div>
+		<div>
+			<label for="email">Email :</label>
+			<input type="email" name="Email" id="email" required placeholder="your email" title="Please fill in an valid email address.">
+			<label for="Password">Password :</label>
+			<!-- <input type="Password" name="Password" id="Password" required minlength="8" maxlength="16" placeholder="Password"> -->
+
+			<!-- In above password field we used minlength/maxlength to set constraints to length of password, we can also use a newer approach that is "pattern" attribute. This also lets us set the pattern length of the password field. -->
+
+			<input type="password" name="Password" pattern="{8, 16}" title="Please choose your password between 8 to 16 characters." placeholder="your password" required>
+		</div>
+		<div>
+			<label for="birthday">Birthday :</label>
+			<select name="month" id="birthday">
+				<option>Month</option>
+				<option value="01">January</option>
+				<option value="02">February</option>
+				<option value="03">March</option>
+				<option value="03">April</option>
+			</select>
+			<select name="Day" id="birthday">
+				<option>Day</option>
+				<option value="1">Day 1</option>
+				<option value="2">Day 2</option>
+				<option value="3">Day 3</option>
+				<option value="4">Day 4</option>
+			</select>
+			<select name="Year" id="birthday">
+				<option>Year</option>
+				<option>1996</option>
+				<option>1997</option>
+				<option>1998</option>
+				<option>1999</option>
+			</select>
+		</div>
+		<div>
+			<label for="terms">I agree to the terms and conditions </label>
+			<input type="checkbox" name="terms_and_conditions" id="terms" required>
+		</div>
+		
+		<input type="submit">
+	</form>
+</body>
+</html>

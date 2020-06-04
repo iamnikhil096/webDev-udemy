@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>How to use Table element</title>
+</head>
+<body>
+	<!-- there are two ways of designing a table, and both gives the same result its just the second technique is included in HTML5-->
+		<!-- 1. first way is simple by using <tr> and <td> -->
+		<!-- 2. second way is to divide the table content into two parts, "Table heading" and "Table body", to give more emphasis on type of data -->
+	<!--  First technique is given below. -->
+	<table border="1">
+		<tr>
+			<th>Name</th>
+			<th>Age</th>
+			<th>Gender</th>
+		</tr>
+		<tr>
+			<td>Nikhil</td>
+			<td>21</td>
+			<td>male</td>
+		</tr>
+		<tr>
+			<td>Aditya</td>
+			<td>24</td>
+			<td>male</td>
+		</tr>
+	</table>
+	<br/>
+	
+	<!-- Second and the latest technique to write a table is given below. -->
+	<table border="1">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Age</th>
+				<th>Gender</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Nikhil</td>
+				<td>21</td>
+				<td>male</td>
+			</tr>
+			<tr>
+				<td>Aditya</td>
+				<td>24</td>
+				<td>male</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>

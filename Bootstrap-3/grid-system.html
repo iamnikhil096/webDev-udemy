@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bootstrap Grid System</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+	<style type="text/css">
+		.pink {
+			background: pink;
+			border: 1px solid purple;
+		}
+		.blue {
+			backgroung: blue;
+			border: 1px solid white;
+		}
+	</style>
+</head>
+<body>
+	<!-- every time we use a grid we use it inside a container. -->
+	<!-- <div class="container">
+		<div class="row">
+			<div class="col-lg-1 pink">CL LG 1</div>
+			<div class="col-lg-1 pink">CL LG 1</div>
+			<div class="col-lg-1 pink">CL LG 1</div>
+			<div class="col-lg-1 pink">CL LG 1</div>
+			<div class="col-lg-1 pink">CL LG 1</div>
+			<div class="col-lg-1 pink">CL LG 1</div>
+			<div class="col-lg-1 pink">CL LG 1</div>
+			<div class="col-lg-1 pink">CL LG 1</div>
+			<div class="col-lg-1 pink">CL LG 1</div>
+			<div class="col-lg-1 pink">CL LG 1</div>
+			<div class="col-lg-1 pink">CL LG 1</div>
+			<div class="col-lg-1 pink">CL LG 1</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-2 pink">CL LG 2</div>
+			<div class="col-lg-8 pink">CL LG 8</div>
+			<div class="col-lg-2 pink">CL LG 2</div>
+		</div>
+	</div> -->
+
+	<!-- we can have 4 different layout or sizes using the grid system for phones, tablets, laptops and bigger screens. -->
+	<!-- <div class="container">
+		<div class="row">
+			<div class="col-lg-1 col-md-2 pink">CL LG 1</div>
+			<div class="col-lg-1 col-md-2 pink">CL LG 1</div>
+			<div class="col-lg-1 col-md-2 pink">CL LG 1</div>
+			<div class="col-lg-1 col-md-2 pink">CL LG 1</div>
+			<div class="col-lg-1 col-md-2 pink">CL LG 1</div>
+			<div class="col-lg-1 col-md-2 pink">CL LG 1</div>
+			<div class="col-lg-1 col-md-2 pink">CL LG 1</div>
+			<div class="col-lg-1 col-md-2 pink">CL LG 1</div>
+			<div class="col-lg-1 col-md-2 pink">CL LG 1</div>
+			<div class="col-lg-1 col-md-2 pink">CL LG 1</div>
+			<div class="col-lg-1 col-md-2 pink">CL LG 1</div>
+			<div class="col-lg-1 col-md-2 pink">CL LG 1</div>
+		</div>
+	</div> -->
+
+
+	<!-- here by default when we go to "xs" size it automatically takes 12 units, so we dont have to define it explicitly. -->
+			<!-- also here we have defined size 3 units for both the "md" and "lg" sizes, so even if we dobnt give lg = 3 it will automatically take up the size of medium into large. -->
+	<!-- <div class="container">
+		<div class="row">
+			<div class="col-lg-3 col-md-3 col-sm-6 pink">CL LG 2</div>
+			<div class="col-lg-3 col-md-3 col-sm-6 pink">CL LG 8</div>
+			<div class="col-lg-3 col-md-3 col-sm-6 pink">CL LG 2</div>
+			<div class="col-lg-3 col-md-3 col-sm-6 pink">CL LG 2</div>
+		</div>
+	</div> -->
+
+	<!-- Nested grid System, in nested grid we can further divide the grid into further 12 units. -->
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3 col-md-3 col-sm-6 pink">
+				<div class="row">
+					<div class="col-lg-6 blue">first half</div>
+					<div class="col-lg-6 blue">second half</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-6 pink">CL LG 8</div>
+			<div class="col-lg-3 col-md-3 col-sm-6 pink">CL LG 2</div>
+			<div class="col-lg-3 col-md-3 col-sm-6 pink">CL LG 2</div>
+		</div>
+	</div>
+</body>
+</html>

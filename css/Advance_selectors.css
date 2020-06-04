@@ -1,0 +1,35 @@
+/* There are many type of selectors, but only some are in use, actually we less/more use 30 different types of selectors which we can find here - "https://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048"*/
+
+/* 1. first one is the "*" star selector, this selector is used to select everything on the web page.*/
+* {
+	/* Star Selector*/
+	border: 1px solid lightgrey;
+}
+
+/* 2. Descendent Selector*/
+li a {
+	/* This means all the anchor tags that belong(nested) to an li should have text as red color.*/
+	color: Red;
+}
+
+/* 3. Adjacent Selector*/
+h4 + ul {
+	/* This means the "ul" element that lies at the ssame level as h4 but just after it, i.e. adjacent to it.*/
+	border: 4px solid red;
+}
+
+/* 4. Attribute Selector*/
+a[href = "https://www.google.com"] {
+	/* This selects all the anchor tag with "href = " attribute defined as, ie. - "https://www.google.com" */
+	background : yellow;
+}
+
+/* N'th of type*/
+ul:nth-of-type(1) {
+	/* This will select the 3rd "ul" in the page. */
+	background : orange;
+}
+li:nth-of-type(2) {
+	/* This will select the 2nd "li" in all the "ul" present in the page.*/
+	background: green;
+}

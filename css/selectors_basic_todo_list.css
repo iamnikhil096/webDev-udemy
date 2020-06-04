@@ -1,0 +1,34 @@
+/* The general rule for CSS selectors is */
+/*
+	selector {
+		property: value;
+	}
+*/
+
+	/* We will study about 3 different types of Selectors here, (1. Element Selector, 2. Id Selector, 3. Class Selector) */
+	/* 1. First is the Element Selector - using this we can select the entire element on the page and all its occurences, and give them all a common Style. */
+body {
+	background: antiquewhite;
+}
+li {
+	border: 2px solid red; /*(width, style, color)*/
+}
+
+	/* 2. Second type is the "Id Selector" - "This type of selector is used to select a single element with the given id, 
+		that element can be a container (ie. it can have multiple elements contained inside it like the Form element) or it can be a single "list item", etc.
+
+		the problem with Id selector is that, a particular Id can be assigned to only one element in a page, whereas multiple elements can have their own unique Id */
+	/* we use "#" sign to select an Id */
+#special {
+	background: purple;
+}
+
+	/* 3. Third type of selector is the "Class Selector" - This type of selector is used to select multiple elements to give them all similar style.
+		It is different from the element selector as former selects all elements of same type (eg. "h1" will select all "h1's", etc.) 
+		but using class selector we can select different elements types having same Class,
+		(eg. we can select a particular "h1" and a particular "form" with same Class) 
+		to give them a particular style that will be different from other "h1's" and other "form's" in the page.
+		*/
+.completed {
+	text-decoration: line-through;
+}

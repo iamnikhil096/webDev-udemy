@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Practice</title>
+</head>
+<body>
+	<h1>Login Form 1</h1>
+	<!-- form is a BLOCK element. -->
+	<form action="http://www.wikipedia.org">
+		<!-- form element has two attributes, -->
+			<!-- 1. action = where the form should send the data to. -->
+			<!-- 2. method = what HTTP method (get/post) -->
+		<input type="text" name="Username" placeholder="Username">
+		<input type="password" name="Password" placeholder="Password">
+			<!-- placeholder = it specifies the default text that should should appear in the text field when no data is there. -->
+		<input type="submit" >
+	</form>
+	<h1>Login Form 2 using Labels</h1>
+	<form>
+		<!-- there are two ways to define labels for input fields, -->
+			<!-- 1. we can nest the input field inside the label element like shown below. -->
+			<!-- 2. we can use "for" and "id" attribute to connect the label to the input type. -->
+		<label>
+			USERNAME : 
+			<input type="text" name="Username" placeholder="Username">
+		</label>
+		<label>
+			PASSWORD : 
+			<input type="password" name="Password" placeholder="Password">
+		</label>
+		<input type="submit" >
+	</form>
+	<h1>Login Form 3 using "for" and "id" for labels.</h1>
+	<form>
+		<label for="Username">UserName :</label>
+		<input type="text" name="Username" id="Username" placeholder="Username">
+		<label for="Password">Password :</label>
+		<input type="password" name="Password" id="Password" placeholder="Password">
+		<input type="submit">
+	</form>
+
+</body>
+</html>

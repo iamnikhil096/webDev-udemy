@@ -1,0 +1,24 @@
+/* Padding : space between the content and the border */
+/* border : border of the text defined using (width, style, color) */
+/* width : it is the width of the box containing the element. it can be defined using pixels(px) or using 
+	%(ie - 50%, 60%, 70%, etc). now % says how much % of the page it is, and if we define the width in form of % then it actually adjusts whenever we adjust the page(like responsive). */
+/* margin : its the space outside of the border, between elements. */
+p {
+	padding: 10px;
+	/*or if we want padding on only one side of the element, we can use,*/
+		/*padding-left: 5px or padding-top: 2px, etc. */
+	width: 50%; /*or we can define using pixels too, 20px, 40px, etc.*/
+	border: 2px solid blue;
+		 /*border-top: 5px; */ /*to define border on top only we can use this, just like we can define on any side we want.*/
+	
+	margin: 100px;
+	/* margin-top: 10px, margin-right: 15px, etc. */
+	/* or there is shortcut way of doing this. */
+	margin: 20px 40px 500px 100px; /* its (top, right, bottom, left)*/
+	
+	/*	margin: 0 auto 0 auto;
+		margin: 0 auto;
+		*/
+	/*both of the above ways are same which tells to automatically decisde the margin for left and right side and for top and bottom to be 0. */
+	/*and it actually centers the element.*/
+}

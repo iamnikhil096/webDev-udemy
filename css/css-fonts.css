@@ -1,0 +1,64 @@
+ /*font-family*/
+p {
+	/* we can set any font here that is available with the system. */
+	font-family: "Arial"
+	/* we cannot give a font without any quotes, if that font name includes a number (eg - "19 Arial" (say))*/
+}
+h1 {
+	font-family: "serif";
+}
+
+
+
+
+/* font-size */
+h1 {
+	font-size: 200px;
+}
+/*there is another way to set the font size, actualkly a cooler way*/
+/*Actually we can definbe the font size of an elemnet depending on the font size of its parent*/
+/*An exampple is given below*/
+body {
+	font-size: 10px;
+}
+h1 {
+	/* This "5.0em" means the font-size of "h1" element will be 5 times the font size of its parent, and parent here is the "body" element*/
+	font-size: 5.0em;
+}
+p {
+	/* Its font-size will be twice the size of its parent, ie- body. */
+	font-size: 2.0em;
+}
+span{
+	/*Its font-size will be twice that of the "p" element. */
+	font-size: 2.0em;
+}
+
+
+
+
+
+/* font-weight */
+p {
+	font-weight: bold; /*this will make the paragraph text "Bold".*/
+	font-weight: normal; /*this will make it look normal.*/
+	font-weight: 100; /*some fonts also allow numeric values for their font-weight, the values range from (100 to 800), and its not that we can use any number b/w 100 to 800 but only multiples of 100 and  in b/w the given range.(ie - 100, 200, 300, 400, 500, ...)*/ 
+}
+
+/* line-height */
+	/*line height basically means line spacing.*/
+p {
+	/*whatever value we set, that basically determines how much times the default line height we want to make.*/
+	/* 2- means twice the default height as specified by the font, 5 means 5 times, etc.*/
+	line-height: 2; /* it can be decimal too, (eg - 1.5, 2.5, etc) */
+}
+
+/* text-align */
+h1 {
+	text-align: center; /*it can be (left, right, center)*/
+}
+
+/* text-decoration */
+p {
+	text-decoration: underline; /*it can be (line-through, etc).*/
+}
